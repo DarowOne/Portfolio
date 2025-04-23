@@ -1,0 +1,817 @@
+/* reseteo de estilos por defecto del navegador */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul{
+  list-style: none;
+  padding-left: 0;
+
+}
+
+html {
+  height: 100%;
+}
+
+.body {
+  background: white;
+  min-height: 100vh;
+  
+}
+
+h1 { 
+  text-align: left;
+  font-size: 20px !important;
+  padding-left: 50px;
+  
+  font-family: 'Poppins', sans-serif !important;
+  font-weight: bold !important;
+  Color: black;
+
+}
+
+.h1_portada {
+  font-size: 30px !important;
+}
+
+.h1_subportada {
+  font-size: 15px !important;
+}
+
+
+
+.contenedor {
+  /*background-color: blueviolet;*/
+  display: flex;
+
+  margin: 0 auto;
+  max-width: 95%;
+  padding-top: 10px;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.contenedor_2 {
+  /*background-color: blueviolet;*/
+  display: flex;
+
+  margin: 0 auto;
+  max-width:85%;
+  padding-top: 10px;
+  padding-bottom: 40px;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.contenedor_index {
+  display: flex;
+
+  margin: 0 auto;
+  max-width: 95%;
+  padding-top: 10px;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.cabecera {
+  background-color: white;
+  padding-top: 0;
+  padding-bottom: 0px;
+  width: 100%;
+  height: 45px;
+  /*box-shadow: 0 2px 6px rgba(0, 0, 0, 2);*/
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  align-items: center;
+}
+
+.cabecera_index {
+  background-color: rgb(0, 0, 0);
+  padding-top: 0;
+  padding-bottom: 0px;
+  width: 100%;
+  height: 45px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 2);
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  align-items: center;
+}
+
+.lista_menu {
+    gap: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    
+ }
+
+ .lista_menu_index {
+  gap: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  
+}
+
+.menu {
+    min-width: 30%;
+    padding-right: 5%;
+ 
+}
+
+.texto_menu {
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    text-decoration: none;
+    font-size: 14px !important;
+    transition: all 1s;
+}
+
+.texto_menu:hover {
+  transition: all 1s;
+  color: gray;
+  
+    
+  
+} 
+
+.main{
+  min-height: 100vh;
+  width: 100%;
+  margin-top: 50px;
+  background-color:white;
+  
+}
+
+
+/* index */
+
+.portada {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  /*width: 80%;*/
+}
+
+.hero_2 {
+  height: 700px;
+  width: 100%;
+  background-image: url(../img_web/dario_sobremi3.jpg);
+  background-size: cover;
+  /*background-attachment: fixed;*/
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+.bienvenidos_1 {
+  
+  color: white;
+  max-width: 100%;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 32px;
+     
+
+}
+.parrafo_1 {
+  
+  color: white;
+  font-style: oblique;
+  max-width: 100%;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 32px;
+     
+
+}
+
+/* Fijar Elemento a la pantalla (Whatsapp) */
+
+.fijar {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  z-index: 1000;
+  
+}
+
+.fijar__enlace {
+  display: inline-block;
+  background-color: white;
+  opacity: 90%;
+  color: black;
+  padding: 10px 12px;
+  text-decoration: none;
+  border-radius: 100px;
+  transition: all 1s;
+}
+
+.fijar__enlace:hover {
+  box-shadow: 5px 5px 5px goldenrod;
+}
+
+.fijar__img {
+  width: 40px;
+  height: 40px;
+  color: green;
+  box-shadow: none !important;
+  
+}
+
+/* pie footer */
+
+.pie_pagina {
+  width: auto;
+  color: white;
+  background-color: black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  
+
+}
+
+.pie_contenido {
+ text-align: center;
+ padding: 10px 0;
+ font-size: 12px;
+}
+
+.pie_enlace {
+  color: white;
+}
+
+.pie_enlace:hover {
+  color: yellow;
+}
+
+--------------------------------------------------
+.miniaturas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+}
+
+.container_portfolio {
+   margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-gap: 20px;
+    /*separacion grid*/
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows: 200px;
+    grid-auto-flow: dense;
+    width: 80% !important;
+    align-items: center;
+}
+
+.container_portfolio > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+  
+  transition: all 0.5s;
+}
+
+.pie_galeria {
+  background-color: black;
+  lighting-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ubicaciones_galeria {
+
+  color: antiquewhite;
+  
+} 
+
+
+.main_2 {
+  padding-top: 34vh;
+  padding-bottom: 150px;
+  background-color: white;
+  width: 100%;
+  min-height: 90vh;
+  
+  
+}
+
+.main_2videos {
+  padding-top: 10vh;
+  padding-bottom: 10px;
+  background-color: white;
+  width: 100%;
+  min-height: 90vh;
+  
+  
+}
+
+.main_container_video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ajusta la altura del contenedor principal al 100% de la altura de la ventana */
+    padding: 20px;
+    box-sizing: border-box;
+    
+}
+
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Espacio entre los videos */
+  padding: 20px;
+  box-sizing: border-box;
+  width: 90%;
+}
+
+.video-wrapper {
+  flex: 1;
+  max-width: 50%; /* Asegura que cada video ocupe la mitad del contenedor */
+  box-sizing: border-box;
+}
+
+iframe {
+  width: 100%;
+  height: 315px; /* Altura de los videos */
+  border: none;
+}
+
+.main_3{
+  margin: 0 auto;
+  width: 100%;
+  background-color:#171717;
+  ;
+}
+
+.main_4 {
+  padding-top: 50px;
+  padding-bottom: 30px;
+  background-color: white;
+  width: 100%;
+
+}
+
+
+--------------------------------------------------
+.container_3 {
+  width: 100vh;
+  margin: 0px;
+  padding: 0px 0px;
+  
+}
+.container_3 > img {
+  width: 100%;
+ 
+}
+
+.container_3 img {
+  object-fit: cover;
+  height: 90vh;
+}
+
+
+.container {
+    width: 80%;
+    margin: auto;
+    /*padding: 30px 0px;*/
+  }
+  
+  .container > a {
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+  }
+  
+  
+  
+  .container > a > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.5s;
+
+  }
+
+
+  
+  .container > a > img:hover {
+    
+    box-shadow: 0px 0px 10px #000;
+    /*border-radius: 5px;*/
+
+  }
+  
+  .container {
+    /*margin-left: 80px;
+    margin-right: 80px;*/
+    margin-bottom: 0px;
+    display: grid;
+    grid-gap: 0px;
+    /*separacion grid*/
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    /*grid-auto-rows: 200px;*/
+    grid-auto-flow: dense;
+    width: 100% !important;
+  }
+
+  .container_videos {
+    /*margin-left: 80px;
+    margin-right: 80px;*/
+    margin-bottom: 0px;
+    
+    grid-gap: 0px;
+    /*separacion grid*/
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    /*grid-auto-rows: 200px;*/
+    grid-auto-flow: dense;
+    width: 100% !important;
+  }
+
+  
+
+
+/*Sobre Mi (about_me)*/
+
+.sobremi {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: white;
+  padding-top: 105px;
+  padding-bottom: 105px;
+
+} 
+
+.foto_biografia {
+  width: 40%;
+  /*background-color: green;*/
+}
+
+.imagen_perfil {
+  display: block;
+  max-width: 300px;
+ 
+}
+
+.texto_biografia {
+  width: 80%;
+  /*background-color: blue;*/
+
+}
+
+.texto_biografia_2 {
+  width: 40%;
+  /*background-color: blue;*/
+
+}
+
+.parrafo_biografia {
+  /*background-color: red;*/
+  color: black;
+  padding-top: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-size: 20px;
+  text-align: center;
+  justify-content: center;
+}
+  
+.card-text {
+  font-size: 15px !important;
+  font-style: italic;
+  color: white;
+  
+}
+
+.card-title:hover {
+    
+    transform: scale(1.10);
+    color: yellow;
+    border-radius: 2px; 
+
+    
+}
+
+
+.portfolio_container {
+  
+  background-color:white;
+   
+   margin-bottom: 10px;
+   display: flex !important;
+ 
+   width: auto;
+   overflow: auto;
+   align-items: center;
+}
+
+.row-m5 {
+  display: flex;
+}
+
+
+
+/* Media Querys */
+
+@media (max-width: 768px) {
+
+
+
+  .video-wrapper {
+    max-width: 100%; /* En pantallas pequeñas, los videos ocupan el 100% del ancho del contenedor */
+}
+
+.video-container {
+    flex-direction: column; /* Los videos se alinean verticalmente uno debajo del otro */
+    gap: 10px; /* Reduce el espacio entre los videos en pantallas pequeñas */
+}
+
+.main_container_video {
+  margin-top: 20%;
+  padding: 0;
+}
+
+
+
+  .d-none {
+    display: block;
+  }
+
+  .m-5 {
+    margin: 0% !important;
+  }
+
+  .main_2{
+    padding-top: 100px;
+    padding-bottom: 5%;
+  }
+
+  .main_4{
+    padding-top: 100px;
+    padding-bottom: 5%;
+  }
+
+  .main {
+    padding-top: 20%;
+    margin-top: 0px;
+  }
+
+  .menu {
+    padding-right: 0px;
+  }
+
+  .lista_menu_index {
+    padding-right: 0px;
+    gap: 50px;
+
+  }
+
+  .portfolio_container {
+    align-items: normal;
+  }
+
+  .container {
+   /* 
+   padding-left: var(--bs-gutter-x, 0.30rem) !important;
+   */
+    margin-bottom: 0px;
+  }
+
+  .contenedor_index {
+    display: flex;
+    margin: 0;
+    max-width: 95%;
+    padding-top: 10px;
+    justify-content: center;
+    align-items: center;
+  
+  }
+
+  .contenedor > h1 {
+    font-size: 15px;
+    padding-left: 0px;
+  }
+
+  .cabecera .contenedor {
+      flex-direction: column;
+      width: 100%;
+  }
+
+  .cabecera {
+      height: 8vh;
+    
+  }
+
+ 
+  
+  .lista_menu {
+      gap: 10px;
+      flex-wrap: wrap;
+      padding-left: 0rem;
+  }
+
+  .texto_menu {
+      font-size: 15px;
+  }
+  
+  .tit_serv {
+      flex-direction: column;
+      padding-top: 150px;
+      width: 100%;
+      align-items: center;
+  }
+
+  .portada {
+    flex-direction: column;
+    width: 100%;
+    height: 90vh;
+  }
+
+  .h1_portada{
+    padding: initial;
+  }
+
+  .h1_subportada{
+    padding: initial;
+  }
+
+  .bienvenidos_1 {
+      font-size: 28px;
+  }
+
+  .parrafo_1 {
+      font-size: 15px;
+  }
+
+
+  .fijar .fijar__enlace {
+      flex-direction: column;
+      align-items: center;
+
+  }
+
+  .fijar__enlace {
+    padding: 10px 10px;
+    height: 60px;
+    width: 60px;
+  }
+
+  .fijar__img {
+      width: 40px;
+      height: 40px;
+  }
+
+  .hero_2 {
+      flex-direction: column;
+      background-image: url(../img_vertical/vista_rio_oro.jpg);
+      background-position: center;
+      width: 100%;
+
+  }
+
+  .sobremi {
+      flex-direction: column;
+      /*background-color: aqua;*/
+      padding-bottom: 5px;
+      padding-top: 5px;
+      
+  }
+
+ .texto_biografia {
+     flex-direction: column;
+     align-items: center;
+     width: 100%;
+     padding-top: 20px;
+  
+ }
+
+ .texto_biografia_2{
+  width: 70%;
+  padding-top: 20px;
+ }
+
+ .contenedor {
+     flex-direction: column-reverse;
+     width: 100%;
+ 
+     
+ }
+
+ .contenedor_2{
+  flex-direction: column;
+  max-width: 100%;
+  padding-bottom: 10px;
+ } 
+
+
+
+ 
+ 
+
+ 
+
+
+
+ .parrafo_biografia {
+     flex-direction: column;
+     width: 100%;
+     font-size: 10px;
+     /*background-color: #00bb2d;*/
+     padding: initial;
+    
+ }
+
+
+ .foto_biografia {
+     display: flex;
+     justify-content: center;
+ }
+
+
+  .imagen_perfil {
+      display: block;
+      max-width: 400px;
+      width: 150%;
+      text-align: center;
+      margin: 0%;
+  }
+
+  .pie_contenido {
+      font-size: 8px;
+  }
+
+  .pie_contenido ul {
+    padding-left: 0px;
+  }
+
+  .pie_pagina {
+    padding-bottom: 0px;
+  }
+
+  
+
+  .body {
+    width: 100%;
+    height: 100%;
+    background-color:white;
+
+  }
+
+  .main_3 {
+    flex-direction: column;
+    height: 100vh;
+    background-size: cover;
+    object-fit: contain;
+  }
+
+  .container_3 {
+    flex-direction: column;
+    width: 100%;
+    background-size: cover;
+    object-fit: contain;
+  }
+
+  .container_3 img{
+    background-size: cover;
+    object-fit: cover;
+    background-attachment: fixed;
+  
+    height: 100vh;
+  }
+  
+  
+
+
+
+
+
+
+
+}
+
